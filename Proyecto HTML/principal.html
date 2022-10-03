@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html >
     <head>
-        <title> Proyecto HTML </title>
+        <meta charset="utf-8">
+        <title> Proyecto HTML(Principal) </title>
     </head>
 
     <body>
@@ -10,56 +11,73 @@
                 <img id="Logo" src="images/logo.png" alt="Imagen de prueba">
                 <h1> Compra Gamer </h1>
 
-                <article>Teclado</article>
-                <article>Mouse</article>
-                <article>Monitor</article>
+                <table>
+                    <tr>
+                        <td><p>Teclado</p></td>
+                        <td><p>Mouse</p></td>
+                        <td><p>Monitor</p></td>
+                    </tr>
+                </table>
 
             </header>
 
             <main>
+                
                 <section>
-                    <div>
-                        <img src="images/mouse.png" alt="Imagen de prueba">
-                        <p> $3000 </p>
-                        <b> Socio: 20% de descuento </b>
-                        <p>
-                            El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla.
-                        </p>
-                    </div>
+                    <p></p>             
 
-                    <div>
-                        <img src="images/teclado.png" alt="Imagen de prueba">
-                        <p> $4000 </p>
-                        <b> Socio: 30% de descuento </b>
-                        <p>
-                            Su retroiluminación le da un toque diferente a tu equipo y resalta su composición cuando es utilizado en espacios poco iluminados.
-                        </p>
-                    </div>
+                    <table>
+                        <tr>
+                            <td class="producto">
+                                <img src="images/mouse.png" alt="Imagen de prueba">
+                                <p> $3000 </p>
+                                <b> Socio: 20% de descuento </b>
+                                <p>
 
-                    <div>
-                        <img src="images/monitor.png" alt="Imagen de prueba">
-                        <p> $20000 </p>
-                        <b> Socio: 35% de descuento </b>
-                        <p>
-                            Con tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores nítidos y definidos en tus películas o series favoritas.
-                        </p>
-                    </div>
+                                    El mouse de juego te ofrecerá la<br>posibilidad de marcar la diferencia<br>y sacar ventajas en tus partidas.<br>Su conectividad y sensor suave<br>ayudará a que te desplaces rápido<br>por la pantalla.
+                                </p>
+                            </td>
+
+                            <td class="producto">
+                                <img src="images/monitor.png" alt="Imagen de prueba">
+                                <p> $20000 </p>
+                                <b> Socio: 35% de descuento </b>
+                                <p>
+                                    Con tu pantalla LED no solo<br>ahorrás energía, ya que su consumo<br>es bajo, sino que vas a ver colores<br>nítidos y definidos en tus películas<br>o series favoritas.
+                                </p>
+                            </td>
+
+                            <td class="producto">
+                                <img src="images/teclado.png" alt="Imagen de prueba">
+                                <p> $4000 </p>
+                                <b> Socio: 30% de descuento </b>
+                                <p>
+                                    Su retroiluminación le da un<br>toque diferente a tu equipo y<br>resalta su composición cuando<br>es utilizado en espacios poco<br>iluminados.
+                                </p>
+                            </td>
+                            
+                        </tr>
+                    </table>
 
                 </section>
 
+                <p></p>
+
                 <div id="Carrito">
                     <button type="button">
-                        <a href="carrito.html" target=" _blank">
-                            Carrito De Compras
-                        </a>
+                        <nav>
+                            <a href="carrito.html" target=" _blank">
+                                Carrito De Compras
+                            </a>
+                        </nav>
                     </button>
 
                 </div>
-
+                <p></p>
             </main>
 
             <footer>
-                @2022 - Desarrollado por Lucas Ducamp y Franco Muñoz Cartagena
+                <p>@2022 - Desarrollado por Lucas Ducamp y Franco Muñoz Cartagena</p>
             </footer>
 
         </div>
@@ -67,6 +85,20 @@
         <style>
             img{
                 width: 150px;
+            }
+            body{
+                background-color: black
+            }
+            p,article,b,h1{
+                color: white;
+            }
+            button{
+                width: 150px;
+                height: 30px;
+                background-color: white;
+            }
+            .producto,table,td,footer{
+                border: 1px solid white;
             }
         </style>
     </body>

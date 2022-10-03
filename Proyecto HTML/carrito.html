@@ -11,16 +11,78 @@
             </header>
 
             <main>
+
+                <form action="servidor.html" method="POST">
+                    <ul>
+                        <li>
+                            <label for="inNombreApellido"> Nombre y Apellido:  </label>
+                            <input type="text" id="inNombreApellido" name="nombre_usuario" required> 
+                        </li>
+
+                        <li>
+                            <label for="inEmail"> Correo Electrónico: </label>
+                            <input type="email" id="inEmail" name="email_usuario" required>
+                        </li>
+
+                        <li>
+                            <label for="inNumTarjeta"> Numero de Tarjeta: </label>
+                            <input type="number" id="inNumTarjeta" name="tarjeta_usuario" required>
+                        </li>
+
+                        <li>
+                            <label for="inLocalidad"> Localidad:  </label>
+                            <input type="text" id="inLocalidad" name="localidad_usuario" required> 
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="chkTerminos" name="terminos_uso" required>  
+                            <label for="chkTerminos"> Acepto los términos de uso </label>                            
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="chkListaSocio" name="ofertas_email">  
+                            <label for="chkListaMail"> Quiero hacerme Socio </label>                            
+                        </li>
+
+                        <li>
+                            <label for="inCuotas"> Cuotasz:  </label>
+                            <label for="op_1"> 1 </label>
+                            <input type="radio" name="opcion_pago" value="1" id="op_1">
+
+                            <label for="op_6 "> 6 </label>
+                            <input type="radio" name="opcion_pago" value="6" id="op_6"> 
+
+                            <label for="op_12"> 12 </label>
+                            <input type="radio" name="opcion_pago" value="12" id="op_12">
+                        </li>
+
+                        <li>
+                            <button type="submit"> Enviar </button>
+                            <button type="reset"> Restablecer </button>   
+                        </li>
+
+                    </ul>    
+                </form>
+
+
             </main>
 
             <footer>
+                <p>@2022 - Desarrollado por Lucas Ducamp y Franco Muñoz Cartagena</p>
             </footer>
 
-            <style>
-                body{
-                    background-color: black
-                }
-            </style>
         </div>
     </body>
+    <style>
+        li {
+            margin: 20px;
+            list-style-type: none;
+        }
+
+        form{
+            border: 1px solid black;
+            width: 300px;
+            background-color: lightblue;
+        }  
+    </style>
 </html>
